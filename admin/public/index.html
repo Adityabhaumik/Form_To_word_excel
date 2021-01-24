@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Bharti Maam</title>
+  
+</head>
+<body class="grey lighten-3"">
+
+  <!-- NAVBAR -->
+  <nav class="z-depth-0 grey lighten-4">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo indigo-text">Helper</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+          <li class="logged-in" style="display: none;">
+            <a href="#" class="grey-text" id="logout" >Logout</a>
+          </li>
+          <li class="logged-in" style="display: none;">
+            <a href="https://bhartimaam-74ca1.web.app/" class="grey-text cpylink" id="cpylink" >Application Form</a>
+          </li>
+          
+          <li class="logged-in" style="display: none;">
+            <a href="#" class="white-text  green excel" id="download_excel" > <i class="material-icons">download</i></a>
+          </li>
+          <li class="logged-out" style="display: none;">
+            <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+          </li>
+         
+        </span>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        <button class="btn teal lighten- z-depth-0">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ACCOUNT MODAL -->
+  <!-- search bar   -->
+  <br>
+  <br>
+  <div class="container row logged-in">
+    <form class="searchForm col s12">
+       <div class="row">
+        <div class="input-field col s12">
+          <input id="search" type="text" class="validate search ">
+          <label for="search">Search Employe</label>
+        </div>
+      </div>
+            </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container" style="margin-top: 40px;">
+    <ul class="collapsible z-depth-0 searched">
+       <li style="display: none;">
+        <div class="collapsible-header grey lighten-4"></div>
+        <div class="collapsible-body white"></div>
+      </li> 
+     </ul>
+  </div>
+
+
+
+
+
+  <!-- GUIDE LIST -->
+  <div class="container" style="margin-top: 40px;">
+    <ul class="collapsible z-depth-0 emp">
+       <li style="display: none;">
+        <div class="collapsible-header grey lighten-4"></div>
+        <div class="collapsible-body white"></div>
+      </li> 
+     </ul>
+  </div>
+
+
+
+
+
+
+  
+  <!-- Compiled and minified JavaScript -->
+<script src="https://unpkg.com/docx@5.0.2/build/index.js"></script>
+<script src="scripts/fileSave.js"></script> 
+<script src="scripts/jsonToExcel.js"></script>  
+<script src="scripts/jsonToWord.js"></script>  
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAHvoNvCtmBmbiHNfn70iQy4fUvRU6-piI",
+    authDomain: "bhartimaam-74ca1.firebaseapp.com",
+    databaseURL: "https://bhartimaam-74ca1.firebaseio.com",
+    projectId: "bhartimaam-74ca1",
+    storageBucket: "bhartimaam-74ca1.appspot.com",
+    messagingSenderId: "867276867172",
+    appId: "1:867276867172:web:2043ee0f21b478f7318171",
+    measurementId: "G-3W8SV46B2J"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  db.settings({timestampsInSnapshots:true});
+</script>
+  
+  <script>
+    $(document).ready(function(){
+    $('.modal').modal();
+  });
+     </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.8/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,1198 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Aplication Form </title>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav>
+    <div class="nav-wrapper deep-purple accent-1">
+      <a href="#" class="brand-logo center">Application Form</a>
+    </div>
+  </nav>
+  <!-- contact form -->
+  <section class="section container " id="contact">
+
+    <div class="row">
+
+      <div class="col s12 l10 offset-l2">
+        <form action="" id="create-form">
+          <br>
+          <h6>For Any Field Which Does Not Apply Type "NA"</h6>
+          <br>
+          <br>
+
+
+          <div class="input-field">
+            <h6>CANDIDATE CATEGORY</h6>
+            <br>
+            <p>
+              <label>
+                <input id="category" name="group1" type="radio" value="Fresher">
+                <span class="black-text" style="font-size: medium;">FRESHER</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input id="category" name="group1" type="radio" value="Lateral">
+                <span class="black-text" style="font-size: medium;">LATERAL</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input id="category" name="group1" type="radio" value="Rehire">
+                <span class="black-text" style="font-size: medium;">REHIRE</span>
+              </label>
+            </p>
+          </div>
+          <br>
+          <div class="input-field">
+            <i class="material-icons prefix">supervised_user_circle</i>
+            <input type="text" id="position">
+            <label for="position">Position Applied For</label>
+          </div>
+          <br>
+          <br>
+
+          <!-- tabs -->
+
+          <section id="services">
+            <div>
+              <ul class="tabs">
+                <li class="tab">
+                  <a href="#personal_details_tab" class="">Personal Details</a>
+                </li>
+                <li class="tab">
+                  <a href="#famly_tab" class="">Family Details</a>
+                </li>
+                <li class="tab">
+                  <a href="#Education" class="">Education</a>
+                </li>
+                <li class="tab">
+                  <a href="#work_Experience_tab" class="">Work Experience</a>
+                </li>
+                <li class="tab">
+                  <a href="#Current_compensation_work_sheet" class="">Current Compensation
+                  </a>
+                </li>
+              </ul>
+              <div id="personal_details_tab">
+                <!-- <p class="flow-text">Personal Details </p> -->
+                <h4>Personal Information</h4>
+                <br>
+                <div class="input-field">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input type="text" id="name">
+                  <label for="name">Enter Your Name</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" id="email">
+                  <label for="email">Your Email</label>
+                </div>
+
+                <!--           
+                <div class="input-field">
+                  <i class="material-icons prefix">call</i>
+                  <input type="tel" id="phoneNumber1">
+                  <label for="phoneNumber1">Your Phone Number</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">call</i>
+                  <input type="tel" id="phoneNumber2">
+                  <label for="phoneNumber2">Tel No (Res)</label>
+                </div> -->
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Mobile Number" id="phoneNumber1" type="tel" class="validate">
+                    <label for="phoneNumber1"><i class="material-icons prefix">call</i></label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Tel No (Res)" id="phoneNumber2" type="tel" class="validate">
+                    <label for="phoneNumber2"><i class="material-icons prefix">call</i></label>
+                  </div>
+                </div>
+
+
+
+
+                <div class="input-field">
+                  <i class="material-icons prefix">account_balance</i>
+                  <input type="text" id="marital_status">
+                  <label for="marital_status">Marital Status</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">assistant_photo</i>
+                  <input type="text" id="nationality">
+                  <label for="nationality">Nationality</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">place</i>
+                  <textarea class="materialize-textarea " id="present_addres"></textarea>
+                  <label for="present_addres">Enter Your Present Address</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">roofing</i>
+                  <textarea class="materialize-textarea " id="permanent_addres"></textarea>
+                  <label for="permanent_addres">Enter Your Permanent Address</label>
+                </div>
+
+
+
+
+
+
+
+
+                <!-- <div class="input-field">
+                  <i class="material-icons prefix">chrome_reader_mode</i>
+                  <input type="text" id="passPort">
+                  <label for="passPort">Enter Your Passport No</label>
+                </div>
+                
+                <div class="input-field">
+                  <i class="material-icons prefix">chrome_reader_mode</i>
+                  <input type="text" id="passPort_validity">
+                  <label for="passPort_validity">Enter Your Passport Validity</label>
+                </div> -->
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Passport Number" id="passPort" type="tel" class="validate">
+                    <label for="passPort">Enter Your Passport No</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Validity" id="passPort_validity" type="tel" class="validate">
+                    <label for="passPort_validity">Passport Validity</label>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="input-field">
+                  <i class="material-icons prefix">list_alt</i>
+                  <input type="text" id="dob" class="datepicker">
+                  <label for="dob">Date Of Birth</label>
+                </div>
+
+                <div class="input-field">
+                  <i class="material-icons prefix">list_alt</i>
+                  <input type="text" id="age">
+                  <label for="age">Age</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">list_alt</i>
+                  <input type="tel" id="pan_number">
+                  <label for="pan_number">PAN Card Number</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">list_alt</i>
+                  <input type="text" id="blood_group">
+                  <label for="blood_group">Blood Group</label>
+                </div>
+                <br><br>
+                <h4>Emergency Contact</h4>
+                <br>
+                <table class="striped">
+                  <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Relation</th>
+                        <th>Contact Number</th>
+                      
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="emmercency_contact_name_1">
+                          <label for="emmercency_contact_name_1"></label>
+                        </div>
+                    </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="emmercency_contact_relation_1">
+                          <label for="emmercency_contact_relation_1"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="tel" id="emmercency_contact_Phone_1">
+                          <label for="emmercency_contact_Phone_1"></label>
+                        </div>
+                      </td>
+                  
+                    </tr>
+                 
+                  </tbody>
+                </table>
+
+
+
+
+
+              </div>
+
+
+
+              <div id="famly_tab">
+                <h4>Family Details</h4>
+                <br><br>
+                <table class="striped">
+                  <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Relation</th>
+                        <th>Occoupation</th>
+                        <th>DOB</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_name_1">
+                          <label for="family_name_1"></label>
+                        </div>
+                    </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_relation_1">
+                          <label for="family_relation_1"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_occoupation_1">
+                          <label for="family_occoupation_1"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_DOB_1" class="datepicker">
+                          <label for="family_DOB_1"></label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_name_2">
+                          <label for="family_name_2"></label>
+                        </div>
+                    </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_relation_2">
+                          <label for="family_relation_2"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_occoupation_2">
+                          <label for="family_occoupation_2"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_DOB_2" class="datepicker">
+                          <label for="family_DOB_2"></label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_name_3">
+                          <label for="family_name_3"></label>
+                        </div>
+                    </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_relation_3">
+                          <label for="family_relation_3"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_occoupation_3">
+                          <label for="family_occoupation_3"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_DOB_3" class="datepicker">
+                          <label for="family_DOB_3"></label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_name_4">
+                          <label for="family_name_4"></label>
+                        </div>
+                    </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_relation_4">
+                          <label for="family_relation_4"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_occoupation_4">
+                          <label for="family_occoupation_4"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="family_DOB_4" class="datepicker">
+                          <label for="family_DOB_4"></label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+
+              <div id="Education">
+                <h4>Education</h4>
+                <br><br>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="X std Qualification Awarded" id="X_qualification_awarded" type="text"
+                      class="validate">
+                    <label for="X_qualification_awarded">X std Qualification Awarded</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="From - To (mm/yy)" id="X_years" type="text" class="validate">
+                    <label for="X_years">From-To</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="X std School Name" id="X_schoolName" type="text" class="validate">
+                    <label for="X_schoolName">X std School Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Subject or Specialization" id="Xsub" type="text" class="validate">
+                    <label for="Xsub">Subject or Specialization</label>
+                  </div>
+                </div>
+
+                <div class="input-field">
+                  <input placeholder="% or CGPA (Rank if any)" id="X_marks" type="text" class="validate">
+                  <label for="X_marks">% or CGPA </label>
+                </div>
+
+                <br><br>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="XII std Qualification Awarded" id="XII_qualification_awarded" type="text"
+                      class="validate">
+                    <label for="XII_qualification_awarded">XII std Qualification Awarded</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="From - To (mm/yy)" id="XII_years" type="text" class="validate">
+                    <label for="XII_years">From-To</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="XII std School Name" id="XII_schoolName" type="text" class="validate">
+                    <label for="XII_schoolName">XII std School Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Subject or Specialization" id="XIIsub" type="text" class="validate">
+                    <label for="XIIsub">Subject or Specialization</label>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <input placeholder="% or CGPA (Rank if any)" id="XII_marks" type="text" class="validate">
+                  <label for="XII_marks">% or CGPA </label>
+                </div>
+
+                <br><br>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Graduation Qualification Awarded" id="grad_qualification_awarded" type="text"
+                      class="validate">
+                    <label for="grad_qualification_awarded">Graduation Qualification Awarded</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="From - To (mm/yy)" id="grad_years" type="text" class="validate">
+                    <label for="grad_years">From-To</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Graduation  School Name" id="grad_schoolName" type="text" class="validate">
+                    <label for="grad_schoolName">Graduation School Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Subject or Specialization" id="grad_sub" type="text" class="validate">
+                    <label for="grad_sub">Subject or Specialization</label>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <input placeholder="% or CGPA (Rank if any)" id="grad_marks" type="text" class="validate">
+                  <label for="grad_marks">% or CGPA </label>
+                </div>
+                <br><br>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Post Graduation Qualification Awarded" id="post_grad_qualification_awarded"
+                      type="text" class="validate">
+                    <label for="post_grad_qualification_awarded">Post Graduation Qualification Awarded</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="From - To (mm/yy)" id="post_grad_years" type="text" class="validate">
+                    <label for="post_grad_years">From-To</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Post Graduation  School Name" id="post_grad_schoolName" type="text"
+                      class="validate">
+                    <label for="grad_schoolName">Post Graduation School Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Subject or Specialization" id="post_grad_sub" type="text" class="validate">
+                    <label for="post_grad_sub">Subject or Specialization</label>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <input placeholder="% or CGPA (Rank if any)" id="post_grad_marks" type="text" class="validate">
+                  <label for="post_grad_marks">% or CGPA </label>
+                </div>
+                <br>
+                <div class="input-field">
+                  <input placeholder="Significant Achievements" id="sig_achivment" type="text" class="validate">
+                  <label for="sig_achivment">Significant Achievements</label>
+                </div>
+                <br>
+                <div class="input-field">
+                  <input placeholder="Extra Curricular Activities" id="e_c_activities" type="text" class="validate">
+                  <label for="e_c_activities">Extra Curricular Activities</label>
+                </div>
+                <br>
+                <div class="input-field">
+                  <input placeholder="Training and Special Courses Attended During Professional Career"
+                    id="sig_achivment" type="text" class="validate">
+                  <label for="sig_achivment">Training and Special Courses</label>
+                </div>
+                <br>
+
+                <h4>Professional Membership</h4>
+                <table class="striped">
+                  <thead>
+                    <tr>
+                        <th>Name of Professional Institutions / Social Organizations</th>
+                        <th>Address of Professional Institutions / Social Organizations</th>
+                        <th>Grade of Membership</th>
+                        <th>Level of involvement</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_name_1">
+                          <label for="professional_membership_1"></label>
+                        </div>
+                    </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_address_1">
+                          <label for="professional_membership_address_1"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_grade_1">
+                          <label for="professional_membership_grade_1"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_Level_involvement_1">
+                          <label for="professional_membership_Level_involvement_1"></label>
+                        </div>
+                      </td>
+                   
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_name_2">
+                          <label for="professional_membership_2"></label>
+                        </div>
+                    </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_address_2">
+                          <label for="professional_membership_address_2"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_grade_2">
+                          <label for="professional_membership_grade_2"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_Level_involvement_2">
+                          <label for="professional_membership_Level_involvement_2"></label>
+                        </div>
+                      </td>
+                   
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_name_3">
+                          <label for="professional_membership_3"></label>
+                        </div>
+                    </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_address_3">
+                          <label for="professional_membership_address_3"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_grade_3">
+                          <label for="professional_membership_grade_3"></label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input-field">
+                          <input type="text" id="professional_membership_Level_involvement_3">
+                          <label for="professional_membership_Level_involvement_3"></label>
+                        </div>
+                      </td>
+                   
+                    </tr>
+                  </tbody>
+                </table>
+                      
+
+
+<!--                 
+                <h6>Professional Membership</h6>
+                <br>
+                <div class="input-field ">
+                  <input placeholder="Name and Address of Professional Institutions / Social Organizations"
+                    id="name_address_prof_insti" type="text" class="validate">
+                  <label for="name_address_prof_insti">Name and Address of Institutions </label>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Grade of Membership" id="name_address_prof_insti_grad_member" type="text"
+                      class="validate">
+                    <label for="name_address_prof_insti_grad_member">Grade of Membership</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Level of involvement" id="name_address_prof_insti_lvl_invol" type="text"
+                      class="validate">
+                    <label for="name_address_prof_insti_lvl_invol">Level of involvement</label>
+                  </div> -->
+
+
+
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div id="work_Experience_tab">
+                <h4>Work Experience</h4>
+                <br>
+                <div class="input-field">
+                  <input
+                    placeholder="From-To,Organisation,Last position held,Total Remuneration PA (*),Reason for Leaving"
+                    id="work_ex" type="text" class="validate">
+                  <label for="work_ex">Work Experience</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">trending_up</i>
+                  <input type="text" id="c_vision">
+                  <label for="c_vision">What prompted you to apply to our company and what is your career
+                    vision?</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">table_view</i>
+                  <input type="text" id="s_contribution">
+                  <label for="s_contribution">Significant contribution made in your existing job so far</label>
+                </div>
+                <br>
+                <div class="input-field">
+                  <input
+                    placeholder="Details of any Director positions held in any company (including any family business)"
+                    id="work_ex_details" type="text" class="validate">
+                  <label for="work_ex_details">Details of Positions Held</label>
+                </div>
+
+                <div class="input-field">
+                  <input placeholder="Please give us a detailed description of your current job responsibilities:"
+                    id="work_ex_details_current" type="text" class="validate">
+                  <label for="work_ex_details_current">Details Of current Job And Responsibilities</label>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="notice_priod" type="text" class="validate">
+                    <label for="notice_priod">Notice Period required to Join:</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="expected_salry" type="text" class="validate">
+                    <label for="expected_salry">Salary Expected:</label>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="How did you come to know of opportunities in our company?" id="KnowingUs"
+                      type="text" class="validate">
+                    <label for="KnowingUs">How did you come to know of opportunities in our company?</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Any Location Constraints" id="location_constraints" type="text"
+                      class="validate">
+                    <label for="location_constraints">Any Location Constraints</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s8">
+                    <h6>Have you undergone selection process with us previously?</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="Yes / No" id="prev_try" type="text" class="validate">
+                    <label for="prev_try"></label>
+                  </div>
+                </div>
+                <br>
+                <div class="input-field">
+                  <input placeholder=" Position , Year " id="previous_try" type="text" class="validate">
+                  <label for="previous_try">Position Applied for and Year</label>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="input-field col s8">
+                    <h6>Were you selected for an interview?</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="Yes / No" id="prev_try_selected_interview" type="text" class="validate">
+                    <label for="prev_try_selected_interview"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s8">
+                    <h6>Were you made an offer?</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="Yes / No" id="prev_try_offer_made" type="text" class="validate">
+                    <label for="prev_try_offer_made"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s8">
+                    <h6>Were you previously employed with us?</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="Yes / No" id="prev_try_emp" type="text" class="validate">
+                    <label for="prev_try_emp"></label>
+                  </div>
+                </div>
+                <br>
+                <div class="input-field">
+                  <input
+                    placeholder="Any additional information which you feel will be helpful to us in considering application for employment with us: "
+                    id="previous_try_add_info" type="text" class="validate">
+                  <label for="previous_try_add_info">Any Additional Information</label>
+                </div>
+                <br>
+                <h6>References</h6>
+                <br>
+
+                <div class="input-field">
+                  <input placeholder="other than relatives (Preferably your immediate superiors)" id="references"
+                    type="text" class="validate">
+                  <label for="references">List two references</label>
+                </div>
+                <div class="input-field">
+                  <input placeholder="Yes/No" id="references_relatives_inCompany" type="text" class="validate">
+                  <label for="references_relatives_inCompany">Do you have any relatives in this company</label>
+                </div>
+                <div class="input-field">
+                  <input
+                    placeholder="please mention the Name(s), Designation, Function, Location, and Nature of Relationship"
+                    id="references_relatives_inCompany_yes" type="text" class="validate">
+                  <label for="references_relatives_inCompany_yes">Name, Designation, Function, Location, and Nature of
+                    Relationship </label>
+                </div>
+              </div>
+
+              <div id="Current_compensation_work_sheet">
+                <h4>Current Compensation Work Sheet</h4>
+                <br>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="" id="current_name" type="text" class="validate">
+                    <label for="current_name">Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="" id="current_org" type="text" class="validate">
+                    <label for="current_org">Current Employer</label>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="" id="current_pos" type="text" class="validate">
+                    <label for="current_pos">Current Position</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="" id="current_location" type="text" class="validate">
+                    <label for="current_location">Current Location</label>
+                  </div>
+                </div>
+                <h6>Compensation Details</h6>
+                <br>
+                <h6>I. Monthly Payments</h6>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Basic</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_basic" type="text" class="validate">
+                    <label for="monthly_basic">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_basic_remarks" type="text" class="validate">
+                    <label for="monthly_basic_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>HRA</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_HRA" type="text" class="validate">
+                    <label for="monthly_HRA">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_HRA_remarks" type="text" class="validate">
+                    <label for="monthly_HRA_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Allowances</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_allowances" type="text" class="validate">
+                    <label for="monthly_allowances">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_allowances_remarks" type="text" class="validate">
+                    <label for="monthly_allowances_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Provident Fund</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_provident_fund" type="text" class="validate">
+                    <label for="monthly_provident_fund">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_provident_fund_remarks" type="text" class="validate">
+                    <label for="monthly_provident_fund_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Any Other</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_anyOther" type="text" class="validate">
+                    <label for="monthly_anyOther">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_anyOther_remarks" type="text" class="validate">
+                    <label for="monthly_anyOther_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Total</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_total" type="text" class="validate">
+                    <label for="monthly_total">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_total_remarks" type="text" class="validate">
+                    <label for="monthly_total_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Total- Monthly Payments Annualized </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_anualized" type="text" class="validate">
+                    <label for="monthly_anualized">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="monthly_anualized_remarks" type="text" class="validate">
+                    <label for="monthly_anualized_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <br>
+                <h6>II. Annual Payments</h6>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Bonus ( realistic estimate) </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="bonus_anualized" type="text" class="validate">
+                    <label for="bonus_anualized">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="bonus_anualized_remarks" type="text" class="validate">
+                    <label for="bonus_anualized_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>LTA </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="LTA_anualized" type="text" class="validate">
+                    <label for="LTA_anualized">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="LTA_anualized_remarks" type="text" class="validate">
+                    <label for="LTA_anualized_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Medical </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="medical_anualized" type="text" class="validate">
+                    <label for="medical_anualized">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="medical_anualized_remarks" type="text" class="validate">
+                    <label for="medical_anualized_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Gratuity </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="Gratuity_anualized" type="text" class="validate">
+                    <label for="Gratuity_anualized">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="Gratuity_anualized_remarks" type="text" class="validate">
+                    <label for="Gratuity_anualized_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Super Annuation </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="super_anuation_anualized" type="text" class="validate">
+                    <label for="super_anuation_anualized">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="super_anuation_anualized_remarks" type="text" class="validate">
+                    <label for="super_anuation_anualized_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Any Other </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="anyOther_anualized" type="text" class="validate">
+                    <label for="anyOther_anualized">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="anyOther_anualized_remarks" type="text" class="validate">
+                    <label for="anyOther_anualized_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Leave Encashment </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="leaveEncashment" type="text" class="validate">
+                    <label for="leaveEncashment">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="leaveEncashment_remarks" type="text" class="validate">
+                    <label for="leaveEncashment_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Total - Annaul Payments</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="annual_total" type="text" class="validate">
+                    <label for="annual_total">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="annual_total_remarks" type="text" class="validate">
+                    <label for="annual_total_remarks">Remarks</label>
+                  </div>
+                </div>
+                <br>
+                <h6>III. Car benefits (if applicable)</h6>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Vehicle Repair/Maintenance</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="vehicle_rep_maintain" type="text" class="validate">
+                    <label for="vehicle_rep_maintain">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="vehicle_rep_maintain_remarks" type="text" class="validate">
+                    <label for="vehicle_rep_maintain_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Petrol</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="vehicle_petrol" type="text" class="validate">
+                    <label for="vehicle_petrol">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="vehicle_petrol_remarks" type="text" class="validate">
+                    <label for="vehicle_petrol_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Driver Wages</h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="vehicle_driver_wages" type="text" class="validate">
+                    <label for="vehicle_driver_wages">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="vehicle_driver_wages_remarks" type="text" class="validate">
+                    <label for="vehicle_driver_wages_remarks">Remarks</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Total-Car </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="car_total" type="text" class="validate">
+                    <label for="car_total">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="car_total_remarks" type="text" class="validate">
+                    <label for="car_total_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <h6>Grand Total -Annual(I+II+III) </h6>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="grand_total" type="text" class="validate">
+                    <label for="grand_total">Ammount in INR</label>
+                  </div>
+                  <div class="input-field col s2">
+                    <input placeholder="" id="grand_total_remarks" type="text" class="validate">
+                    <label for="grand_total_remarks">Remarks</label>
+                  </div>
+                </div>
+
+
+                <div class="input-field ">
+                  <p>NOTES OF OTHER BENEFITS WHICH ARE NOT INCLUDED ABOVE</p>
+                  <p>1) Mediclaim, Accident Insurance: If so, premium value <br>
+                    2) Car: If so, type and lease value per month <br>
+                    3) Club membership: <br>
+                    4) Annual Holidays: Value of the same <br>
+                    5) ESOP: To include only Value of Options (which will be forfeited within the next 6 months should
+                    you leave to
+                    join us). This value will be difference between offer price and market price multiplied by no of
+                    such shares
+                    which will be forfeited <br>
+                    6) Any other</p>
+                  <br><br>
+                </div>
+
+                <div class="input-field">
+                  <input id="notes_Other_benifits" type="text" class="validate">
+                  <label for="notes_Other_benifits">NOTES OF OTHER BENEFITS</label>
+                </div>
+
+
+
+
+
+
+              </div>
+            </div>
+
+      </div>
+  </section>
+  <p class="container center">I hereby certify that all the information provided above is true and correct to the best
+    of my knowledge. Any false or
+    misleading information provided on this form or any other document may result in the employment being terminated.
+  </p>
+  <div id="submit" class="input-field center">
+    <button class="btn">Submit</button>
+  </div>
+
+  </form>
+
+  </div>
+  </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer white black-text">
+    <div class="footer-copyright white black-text">
+      <div class="container center-align">&copy; Bharti maam</div>
+    </div>
+  </footer>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.datepicker').datepicker({
+
+      });
+
+    });
+  </script>
+  <!-- firebase scripts -->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyAHvoNvCtmBmbiHNfn70iQy4fUvRU6-piI",
+      authDomain: "bhartimaam-74ca1.firebaseapp.com",
+      databaseURL: "https://bhartimaam-74ca1.firebaseio.com",
+      projectId: "bhartimaam-74ca1",
+      storageBucket: "bhartimaam-74ca1.appspot.com",
+      messagingSenderId: "867276867172",
+      appId: "1:867276867172:web:d6185fa95cfd8324318171",
+      measurementId: "G-3N7TDHMMH2"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+    $(document).ready(function () {
+      $('.tabs').tabs();
+    });
+
+
+
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
